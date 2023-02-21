@@ -28,6 +28,15 @@
 
 	.sub-heading {
 		@apply pt-9 text-lg underline underline-offset-8 font-semibold
+		 dark:text-slate-100
+	}
+
+	.timeline-item {
+		@apply mb-10 ml-6 -translate-x-5 px-8 pt-0 mt-0 pb-5 border-l-4 border-red-200 dark:border-gray-700
+	}
+
+	.timeline-item:last-child {
+		@apply border-l-0
 	}
 }
 
@@ -40,16 +49,7 @@ html {
 	/* scroll-snap-align: start; */
 }
 
-#projects {
-	height: 50vh;
-}
-
 main {
-
+	height: 100vh;
+	overflow-y: scroll;
 }
-
-/* main { */
-/* 	scroll-snap-type: y mandatory; */
-/* 	overflow-y: scroll; */
-/* 	height: 100vh; */
-/* } */
